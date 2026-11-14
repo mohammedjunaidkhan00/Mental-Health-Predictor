@@ -48,8 +48,8 @@ form.addEventListener("submit", async function (event) {
   predictBtn.textContent = "Predicting...";
 
   try {
-    // Note: Agar HTML file directly browser me khol rahe hain toh full URL "http://127.0.0.1:8000/predict" use karein
-    const response = await fetch("http://127.0.0.1:8000/predict", {
+
+    const response = await fetch("https://mental-health-predictor-olzk.onrender.com/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
