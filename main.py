@@ -48,9 +48,9 @@ class PredictionResponse(BaseModel):
     predicted_mental_health_score: float
 
 
-# @app.get("/")
-# def home():
-#     return "Welcome 😀😀"
+@app.get("/")
+def home():
+    return "Welcome 😀😀"
 
 
 @app.post("/predict", response_model=PredictionResponse)
