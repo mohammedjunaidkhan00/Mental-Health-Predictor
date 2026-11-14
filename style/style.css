@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #252b42;
+    padding: 35px 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #30375d;
+}
+
+.header p {
+    color: #777e91;
+    font-size: 15px;
+}
+
+.form-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eef0f6;
+}
+
+.demo-btn {
+    background: #eef0ff;
+    color: #4855a6;
+    padding: 8px 14px;
+    font-size: 13px;
+    border-radius: 6px;
+    border: 1px solid #d5dafc;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.demo-btn:hover {
+    background: #dfe3ff;
+}
+
+.section-title {
+    font-size: 17px;
+    margin: 25px 0 16px;
+    color: #4855a6;
+    border-left: 4px solid #5967cf;
+    padding-left: 10px;
+}
+
+.section-title:first-of-type {
+    margin-top: 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13.5px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #3a415c;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #dfe3ee;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background: #fafbfe;
+    transition: all 0.2s;
+}
+
+input:focus,
+select:focus {
+    background: white;
+    border-color: #6875db;
+    box-shadow: 0 0 0 3px rgba(104, 117, 219, 0.12);
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+button.action-btn {
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.predict-btn {
+    flex: 1;
+    color: white;
+    background: #5967cf;
+}
+
+.predict-btn:hover {
+    background: #4654b8;
+}
+
+.reset-btn {
+    color: #505a78;
+    background: #edf0f8;
+}
+
+.reset-btn:hover {
+    background: #e1e5f0;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Result Box Styling */
+.result {
+    display: none;
+    margin-top: 25px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    background: #eef0ff;
+    border: 1px solid #d6dcff;
+    transition: all 0.3s ease;
+}
+
+.result h2 {
+    color: #4654b8;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.score {
+    font-size: 42px;
+    font-weight: 800;
+    color: #30375d;
+    margin-bottom: 6px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.error {
+    display: none;
+    padding: 14px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: #fff0f0;
+    border: 1px solid #f5c6cb;
+    color: #c0392b;
+    font-size: 14px;
+}
+
+.disclaimer {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #858b9c;
+}
+
+@media(max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}
+
+/* Social Media Footer Styling */
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e5f0;
+    text-align: center;
+}
+
+.creator-text {
+    font-size: 13.5px;
+    color: #505a78;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 16px;
+    background: white;
+    color: #30375d;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid #dfe3ee;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+    background: #5967cf;
+    color: white;
+    border-color: #5967cf;
+    transform: translateY(-2px);
+}
+
+.social-btn svg {
+    width: 17px;
+    height: 17px;
+    fill: currentColor;
+}
